@@ -1,6 +1,9 @@
 <h1> <%= @job.title %> </h1>
 
 <p>
-  <%= simple_format(@job.description) %>
+  岗位描述：<%= simple_format(@job.description) %>
+</p>
 
+<p>
+  城市： <%= @job.city %>
 </p>
