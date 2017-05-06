@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>what's new</title>
+        <title>情书</title>
         <%= csrf_meta_tags %>
 
         <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,16 +11,25 @@
 
     <body>
 
+      <div class="content">
         <div class="container-fluid">
           <div class="row">
           <%= render "common/navbar" %>
+          <%= render "common/flashes" %>
           </div>
 
-            <%= render "common/flashes" %>
+
             <%= yield %>
         </div>
+      </div>
+
 
         <%= render "common/footer" %>
 
     </body>
+
+
+
+
+
 </html>
